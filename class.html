@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Boberick the Ilama</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- <link href="">--->
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300|Nunito:400,700&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap CSS File -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="vendor/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link href="vendor/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="vendor/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Main Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header Section Start -->
+    <header class="header">
+        <div class="container-fluid">
+            <div class="logo pull-left">
+                <h1><a href="index.html">Boberick the Ilama </a></h1>
+            </div>
+
+            <nav id="nav-menu-container">
+                <ul class="nav-menu">
+                    <li class="menu-active"><a href="index.html">HOME</a></li>
+                    <li><a href="class.html"></i>CLASS</a></li>
+                    <!-- Dropdown section -->
+                    <li class="menu-has-children"><a href="#">ABOUT<i class="dicon ion-md-arrow-dropdown"></i></a>
+                        <ul>
+                            <li><a href="about.html">ABOUT</a></li>
+                            <li><a href="">CUSTOMIZE</a></li>
+                            <li><a href="">REGISTER</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="achievements.html"></i>ACHIVEMENTS</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- Header Section End -->
+
+    <!-- Banner Section Start-->
+    <section class="banner">
+        <div class="container">
+            <div class="col-lg-12">
+                <div class="banner-nav">
+                    <div class="banner-box">
+                        <a href="index.html">Home </a>
+                        <a href="class.html">class</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Banner Section End-->
+
+    <!-- class Section Start -->
+    <div style="text-align:center">
+        <button onclick="playPause()">Play/Pause</button>
+        <button onclick="makeBig()">Big</button>
+        <button onclick="makeSmall()">Small</button>
+        <button onclick="makeNormal()">Normal</button>
+        <br><br>
+        <video id="video1" width="420">
+            <source src="img/class.mp4" type="video/mp4">
+            <source src="img/class.mp4" type="video/ogg">
+            Your browser does not support HTML video.
+        </video>
+    </div>
+
+    <script>
+        var myVideo = document.getElementById("video1");
+
+        function playPause() {
+            if (myVideo.paused)
+                myVideo.play();
+            else
+                myVideo.pause();
+        }
+
+        function makeBig() {
+            myVideo.width = 1200;
+        }
+
+        function makeSmall() {
+            myVideo.width = 320;
+        }
+
+        function makeNormal() {
+            myVideo.width = 720;
+        } 
+    </script>
+
+    <center>
+        <p>Video courtesy of <a href="#" target="_blank">youtube</a>.</p>
+        <p> Would like to take a class with us? fill following form</p>
+    </center>
+<!--start a form-->
+
+    <form action="#" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="18" max="99" required><br>
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+            <option value="">Please select</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select><br>
+
+        <label for="interests">Interests:</label><br>
+        <input type="checkbox" id="interests1" name="interests[]" value="music">
+        <label for="interests1">Html</label><br>
+        <input type="checkbox" id="interests2" name="interests[]" value="sports">
+        <label for="interests2">Css</label><br>
+        <input type="checkbox" id="interests3" name="interests[]" value="movies">
+        <label for="interests3">Javascript</label><br>
+
+        <label for="comment">Comment:</label><br>
+        <textarea id="comment" name="comment" rows="5" cols="30"></textarea><br>
+
+        <label for="file">Application File:</label>
+        <input type="file" id="file" name="file"><br>
+
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date"><br>
+
+        <label for="time">Time:</label>
+        <input type="time" id="time" name="time"><br>
+
+        <input type="submit" value="Submit">
+    </form><br>
+
+    <!-- class Section End -->
+
+    <!-- Footer Start -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 footer-links">
+                        <!--start of short links to about us page-->
+                        <h4>About Us</h4>
+                        <ul>
+                            <li><i class="ion-md-arrow-dropright"></i> <a href="#">Home</a></li>
+                            <li><i class="ion-md-arrow-dropright"></i> <a href="#">About us</a></li>
+                            <li><i class="ion-md-arrow-dropright"></i> <a href="#">Our services</a></li>
+                            <li><i class="ion-md-arrow-dropright"></i> <a href="#">Terms & condition</a></li>
+                            <li><i class="ion-md-arrow-dropright"></i> <a href="#">Privacy policy</a></li>
+                        </ul>
+                    </div>
+                    <!--start of short links to contact us page-->
+                    <div class="col-lg-3 col-md-6 footer-contact">
+                        <h4>Contact Us</h4>
+                        <p>
+                            xxx-xxx-xxx,<br>
+                            xxxx,<br>
+                            xxxx,<br>
+                            <strong>Phone:</strong> XXXXXXXXXXX<br>
+                            <strong>Email:</strong> example2@gmail.com<br>
+                            <strong>Email:</strong> example2@gmail.com<br>
+                        </p>
+                        <!--start of short links to social page-->
+                        <div class="social-links">
+                            <a href="#"><i class="ion-logo-twitter"></i></a>
+                            <a href="#"><i class="ion-logo-facebook"></i></a>
+                            <a href="#"><i class="ion-logo-linkedin"></i></a>
+                            <a href="#"><i class="ion-logo-instagram"></i></a>
+                            <a href="#"><i class="ion-logo-youtube"></i></a>
+                        </div>
+                    </div>
+                    <!--start of short subscription page-->
+                    <div class="col-lg-3 col-md-6 footer-newsletter">
+                        <h4>Subscription</h4>
+                        <p>Subcribe to us by sending your email to stay updates</p>
+                        <form action="" method="post">
+                            <input type="email" name="email"><input type="submit" value="Subscribe">
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!--start of copyright -->
+        <div class="container">
+            <div class="copyright">
+                &copy; Copyright 2023</a>. All Rights Reserved<br>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer End -->
+
+    <a href="#" class="back-to-top"><i class="ion-md-arrow-dropup"></i></a>
+
+    <!-- Vendor JS Files -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/jquery/jquery-migrate.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/easing/easing.min.js"></script>
+    <script src="vendor/superfish/hoverIntent.js"></script>
+    <script src="vendor/superfish/superfish.min.js"></script>
+    <script src="vendor/waypoints/waypoints.min.js"></script>
+    <script src="vendor/touchSwipe/jquery.touchSwipe.min.js"></script>
+    <script src="vendor/counterup/counterup.min.js"></script>
+    <script src="vendor/owlcarousel/owl.carousel.min.js"></script>
+    <script src="vendor/isotope/isotope.pkgd.min.js"></script>
+    <script src="vendor/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Main Javascript File -->
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
